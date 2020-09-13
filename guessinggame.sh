@@ -1,11 +1,14 @@
-   
+function guess {   
 
-number_of_files=$(ls -l | wc -l)
+           number_of_files=$(ls -l | wc -l)
 
-echo "Hi! Guess the number of files in the current directory:"
+           echo "Hi! Guess the number of files in the current directory:"
 
-read guess
+           read guess
 
+}
+
+guess
 
 while [[ $guess -ne $number_of_files ]]
 do   
